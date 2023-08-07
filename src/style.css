@@ -1,0 +1,121 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54em;
+   
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsl(0, 0%, 95%);
+    margin:1em;
+    border-radius: .6em;
+    overflow: hidden;
+}
+
+.sedans-div{
+    background-color: hsl(31, 77%, 52%);
+    
+}
+
+.suvs-div{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury-div{
+    background-color: hsl(179, 100%, 13%);
+}
+.car-model{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    height: 30em;  
+}
+.car-model img{
+    
+    height: 30px;
+    width:48px;
+}
+.car-model .title{
+    margin-top: 1em;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.2em;
+    font-weight: 700;
+}
+.car-model .description{
+    margin-top: 1.5em;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5em;
+}
+
+.car-model .learn-more-button{
+    margin-top: auto;
+    background-color: hsla(0, 0%, 100%,1);
+    width: 70%;
+    height: 2.8em;
+    text-align: center;
+    line-height: 2.8em;
+    border-radius: 2em;
+    border: white solid 1.5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.sedans-div .learn-more-button{
+    color: hsl(31, 77%, 52%);
+    
+}
+.sedans-div .learn-more-button:hover{
+    color:white;
+    background-color: hsl(31, 77%, 52%);
+}
+.suvs-div .learn-more-button{
+    color: hsl(184, 100%, 22%);
+    
+    
+}
+.suvs-div .learn-more-button:hover{
+    color:white;
+    background-color: hsl(184, 100%, 22%);
+    
+}
+
+.luxury-div .learn-more-button{
+    color: hsl(179, 100%, 13%);
+   
+}
+.luxury-div .learn-more-button:hover{
+    color:white;
+    background-color: hsl(179, 100%, 13%);
+   
+}
+
+@media(max-width:768px){
+    
+    .main{
+        flex-direction: column;
+        align-self: flex-start;
+        padding-bottom: 1em;
+    }
+    .car-model{
+        padding:3em;
+    }
+    .car-model .description{
+        margin-bottom: 5em;
+    }
+    .car-model .learn-more-button{
+        margin-bottom: 2em;
+        width: 60%;
+        height: 3.2em;
+        line-height: 3.2em;
+    }
+}
